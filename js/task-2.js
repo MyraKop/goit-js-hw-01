@@ -1,3 +1,4 @@
+// Modul 1
 // function getShippingMessage(country, price, deliveryFree) {
 //     const totalPrice = price + deliveryFree;
 //     return `Shipping to ${country} will cost ${totalPrice} credits!`
@@ -7,7 +8,7 @@
 // console.log(getShippingMessage("Germany", 80, 20));
 // console.log(getShippingMessage("Sweden", 100, 20));
 
-
+// Modul 2
 // function formatMessage(message, maxLength) {
 //     if (message.length === maxLength) {
 //         return message;
@@ -23,7 +24,7 @@
 // console.log(formatMessage("Nunc sed turpis a felis in nunc fringilla", 15)); // "Nunc sed turpis..."
 // console.log(formatMessage("Nunc sed turpis a felis in nunc fringilla", 41));
 
-
+// Modul 3
 // function makeArray(firstArray, secondArray, maxLength) {
 //     const thirdArray = firstArray.concat(secondArray);
 //     if (thirdArray.length > maxLength) {
@@ -38,3 +39,47 @@
 // console.log(makeArray(["Earth", "Jupiter"], ["Neptune", "Uranus"], 2)); // ["Earth", "Jupiter"]
 // console.log(makeArray(["Earth", "Jupiter"], ["Neptune", "Uranus"], 4)); // ["Earth", "Jupiter", "Neptune", "Uranus"]
 // console.log(makeArray(["Earth", "Jupiter"], ["Neptune", "Uranus", "Venus"], 0)); // []
+
+
+// Modul 4
+// function calcAverageCalories(days) {
+
+//     if (days.length === 0) {
+//         return 0;
+//     }
+
+//     let totalCalories = 0;
+// for (const day of days) {
+//     totalCalories += day.calories;
+//     }
+//     const averageCalories = totalCalories / days.length;
+//     return averageCalories;
+// }
+
+// console.log(
+//   calcAverageCalories([
+//     { day: "monday", calories: 3010 },
+//     { day: "tuesday", calories: 3200 },
+//     { day: "wednesday", calories: 3120 },
+//     { day: "thursday", calories: 2900 },
+//     { day: "friday", calories: 3450 },
+//     { day: "saturday", calories: 3280 },
+//     { day: "sunday", calories: 3300 }
+//   ])
+// ); // 3180
+
+// console.log(
+//   calcAverageCalories([
+//     { day: "monday", calories: 2040 },
+//     { day: "tuesday", calories: 2270 },
+//     { day: "wednesday", calories: 2420 },
+//     { day: "thursday", calories: 1900 },
+//     { day: "friday", calories: 2370 },
+//     { day: "saturday", calories: 2280 },
+//     { day: "sunday", calories: 2610 }
+//   ])
+// ); // 2270
+
+// console.log(
+//   calcAverageCalories([])
+// ); // 0
