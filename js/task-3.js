@@ -1,4 +1,4 @@
-// Modul 1
+// Module 1
 // function getElementWidth(content, padding, border) {
 //     let totalWidth = Number.parseFloat(content) + (Number.parseFloat(padding) * 2) + (Number.parseFloat(border) * 2)
 //     return totalWidth
@@ -9,7 +9,7 @@
 // console.log(getElementWidth("200px", "0px", "0px"));
 
 
-// Modul 2
+// Module 2
 // function checkForSpam(message) {
 //    if (message.toLowerCase().includes("spam") || message.toLowerCase().includes("sale")) {
 //        return true;
@@ -28,7 +28,7 @@
 // console.log(checkForSpam("[SPAM] How to earn fast money?")); // true
 
 
-// Modul 3
+// Module 3
 // function filterArray(numbers, value) {
 //     const newNumbers = [];
 //     for (const number of numbers) {
@@ -45,7 +45,7 @@
 // console.log(filterArray([12, 24, 8, 41, 76], 20)); // [24, 41, 76]
 
 
-// Modul 4
+// Module 4
 // const profile = {
 //     username: "Jacob",
 //     playTime: 300,
@@ -72,7 +72,7 @@
 // profile.updatePlayTime(20);
 // console.log(profile.getInfo()); // "Marco has 320 active hours!"
 
-// Modul 5
+// Module 5
 // const sortByDescendingFriendCount = (users) => {
 //     return users.toSorted((firstUser, secondUser) => secondUser.friends.length - firstUser.friends.length)
 // }
@@ -153,3 +153,39 @@
 //     gender: "male"
 //   }
 // ]
+
+// Module 6
+
+// class StringBuilder {
+//     #value;
+
+//     constructor(initialValue = '') {
+//         this.#value = initialValue;
+//     }
+    
+//     getValue() {
+//         return this.#value;
+//     }
+
+//     padEnd(str) {
+//          this.#value += str;
+//     }
+
+//     padStart(str) {
+//        this.#value = str + this.#value;
+//     }
+
+//     padBoth(str) {
+//         this.#value = str + this.#value + str;
+//     }
+// }
+
+
+// const builder = new StringBuilder(".");
+// console.log(builder.getValue()); // "."
+// builder.padStart("^");
+// console.log(builder.getValue()); // "^."
+// builder.padEnd("^");
+// console.log(builder.getValue()); // "^.^"
+// builder.padBoth("=");
+// console.log(builder.getValue()); // "=^.^="

@@ -1,4 +1,4 @@
-// Modul 1
+// Module 1
 // function getShippingMessage(country, price, deliveryFree) {
 //     const totalPrice = price + deliveryFree;
 //     return `Shipping to ${country} will cost ${totalPrice} credits!`
@@ -8,7 +8,7 @@
 // console.log(getShippingMessage("Germany", 80, 20));
 // console.log(getShippingMessage("Sweden", 100, 20));
 
-// Modul 2
+// Module 2
 // function formatMessage(message, maxLength) {
 //     if (message.length === maxLength) {
 //         return message;
@@ -24,7 +24,7 @@
 // console.log(formatMessage("Nunc sed turpis a felis in nunc fringilla", 15)); // "Nunc sed turpis..."
 // console.log(formatMessage("Nunc sed turpis a felis in nunc fringilla", 41));
 
-// Modul 3
+// Module 3
 // function makeArray(firstArray, secondArray, maxLength) {
 //     const thirdArray = firstArray.concat(secondArray);
 //     if (thirdArray.length > maxLength) {
@@ -41,7 +41,7 @@
 // console.log(makeArray(["Earth", "Jupiter"], ["Neptune", "Uranus", "Venus"], 0)); // []
 
 
-// Modul 4
+// Module 4
 // function calcAverageCalories(days) {
 
 //     if (days.length === 0) {
@@ -84,7 +84,7 @@
 //   calcAverageCalories([])
 // ); // 0
 
-// Modul 5
+// Module 5
 // const getUsersWithFriend = (users, friendName) => {
 //     return users.filter(user => user.friends.includes(friendName))
 // };
@@ -120,7 +120,7 @@
 //   }
 // ];
 
-// console.log(getUsersWithFriend(allUsers, "Briana Decker")); 
+// console.log(getUsersWithFriend(allUsers, "Briana Decker"));
 // [
 //   {
 //     name: "Sharlene Bush",
@@ -145,3 +145,33 @@
 // ]
 
 // console.log(getUsersWithFriend(allUsers, "Adrian Cross" )); // []
+
+// Module 6
+
+// class Storage {
+// #items
+
+//     constructor(items) {
+//         this.#items = items
+//     }
+
+//     getItems() {
+//         return this.#items;
+//     }
+    
+//     addItem(newItem) {
+//         this.#items.push(newItem);
+//     }
+
+//     removeItem(itemToRemove) {
+//         this.#items = this.#items.filter(item => item !== itemToRemove);
+//     }
+
+// }
+
+// const storage = new Storage(["Nanitoids", "Prolonger", "Antigravitator"]);
+// console.log(storage.getItems()); // ["Nanitoids", "Prolonger", "Antigravitator"]
+// storage.addItem("Droid");
+// console.log(storage.getItems()); // ["Nanitoids", "Prolonger", "Antigravitator", "Droid"]
+// storage.removeItem("Prolonger");
+// console.log(storage.getItems()); // ["Nanitoids", "Antigravitator", "Droid"]

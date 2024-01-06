@@ -1,4 +1,4 @@
-// Modul 1
+// Module 1
 // function makeTransaction(quantity, pricePerDroid) {
 //     const totalPrice = quantity * pricePerDroid;
 //     return `You ordered ${quantity} droids worth ${totalPrice} credits!`
@@ -9,7 +9,7 @@
 // console.log(makeTransaction(10, 500));
 
 
-// Modul 2
+// Module 2
 // function makeTransaction(quantity, pricePerDroid, custumerCredits) {
 //     let totalPrice = quantity * pricePerDroid;
 //     if (totalPrice > custumerCredits) {
@@ -27,7 +27,7 @@
 // console.log(makeTransaction(10, 500, 5000));
 
 
-// Modul 3
+// Module 3
 // function slugify(title) {
     
 //     return title.toLowerCase().split(' ').join("-")
@@ -40,7 +40,7 @@
 // console.log(slugify("How to become a JUNIOR developer in TWO WEEKS")); // "how-to-become-a-junior-developer-in-two-weeks"
 
 
-// Modul 4
+// Module 4
 // function isEnoughCapacity(products, containerSize) {
 //     let totalProducts = 0;
 
@@ -66,7 +66,7 @@
 //   isEnoughCapacity({ apples: 18, potatoes: 5, oranges: 2 }, 7)
 // ); // false
 
-// Modul 5
+// Module 5
 // const getUserNames = users => {
 //     return users.map(user => user.name)
 // }
@@ -111,3 +111,36 @@
 //   },
 // ])
 // ); // ["Moore Hensley", "Sharlene Bush", "Ross Vazquez", "Elma Head", "Carey Barr", "Blackburn Dotson", "Sheree Anthony"]
+
+// Module 6
+
+// const customer = {
+//   username: "Mango",
+//   balance: 24000,
+//   discount: 0.1,
+//   orders: ["Burger", "Pizza", "Salad"],
+//   // Change code below this line
+//   getBalance() {
+//     return this.balance;
+//   },
+//   getDiscount() {
+//     return this.discount;
+//   },
+//   setDiscount(value) {
+//     this.discount = value;
+//   },
+//   getOrders() {
+//     return this.orders;
+//   },
+//   addOrder(cost, order) {
+//     this.balance -= cost - cost * this.discount;
+//     this.orders.push(order);
+//   },
+//   // Change code above this line
+// };
+
+// customer.setDiscount(0.15);
+// console.log(customer.getDiscount()); // 0.15
+// customer.addOrder(5000, "Steak");
+// console.log(customer.getBalance()); // 19750
+// console.log(customer.getOrders()); // ["Burger", "Pizza", "Salad", "Steak"]
