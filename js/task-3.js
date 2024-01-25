@@ -189,3 +189,7 @@
 // console.log(builder.getValue()); // "^.^"
 // builder.padBoth("=");
 // console.log(builder.getValue()); // "=^.^="
+
+
+// Module 7
+
